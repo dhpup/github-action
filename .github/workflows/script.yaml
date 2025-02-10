@@ -1,0 +1,10 @@
+name: always-succeed
+on: 
+  workflow_dispatch:
+
+jobs:
+  pass:
+    runs-on: ubuntu-latest
+    steps:
+      - name: always-succeed
+        run: exit 0
